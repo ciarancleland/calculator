@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./program.js" async></script>
+</head>
+<body>
+    <header><h1>Calculator Webpage</h1></header>
+    <main>
+    <section>
+    <form>
+        <div>
+            <input type="display" id="display" value="git"></input>
+        </div>
+        <div>
+            <input class = "button" type="button" value = "AC" id = "AC" onclick = clearDisplay()></input>
+            <input class = "button" type="button" value = "Del" id = "Del" onclick = deleteLastVal()></input>
+            <input class = "button" type="button" value = "." id = "." onclick="appendToDisplay('.')"></input>
+
+            <input class = "button" type="button" value = "/" id = "/" onclick = "appendToDisplay('/')"></input>
+        </div>
+        <div>
+            <input class = "button" type="button" value = "7" id = "7" onclick = "appendToDisplay(7)"></input>
+            <input class = "button" type="button" value = "8" id = "8" onclick = "appendToDisplay(8)"></input>
+            <input class = "button" type="button" value = "9" id = "9" onclick = "appendToDisplay(9)"></input>
+
+            <input class = "button" type="button" value = "*" id = "*" onclick = "appendToDisplay('*')"></input>
+        </div>
+        <div>
+            <input class = "button" type="button" value = "4" id = "4" onclick = "appendToDisplay(4)"></input>
+            <input class = "button" type="button" value = "5" id = "5" onclick = "appendToDisplay(5)"></input>
+            <input class = "button" type="button" value = "6" id = "6" onclick = "appendToDisplay(6)"></input>
+
+            <input class = "button" type="button" value = "-" id = "-" onclick = "appendToDisplay('-')"></input>
+        </div>
+        <div>
+            <input class = "button" type="button" value = "1" id = "1" onclick = "appendToDisplay(1)"></input>
+            <input class = "button" type="button" value = "2" id = "2" onclick = "appendToDisplay(2)"></input>
+            <input class = "button" type="button" value = "3" id = "3" onclick = "appendToDisplay(3)"></input>
+
+            <input class = "button" type="button" value = "+" id = "+" onclick = "appendToDisplay('+')"></input>
+        </div>
+        <div id="bottom">
+            <input class = "button" type="button" value = "0" id = "zero" onclick = "appendToDisplay(0)"></input>
+            <input class = "button" type="button" value = "=" id = "equals" onclick = "calculate()"></input>
+        </div>
+    </form>
+    </section>
+    <section id="history">
+        <div id="hisSection">
+            <h1>HISTORY SECTION</h1>
+            <p id="historyLines"></p>
+        </div>
+    </section>
+    </main>
+</body>
+</html>
